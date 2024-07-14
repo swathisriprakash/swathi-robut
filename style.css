@@ -1,0 +1,165 @@
+body{
+    background: black;
+}
+h1{
+    color: white;
+    font-size: 70px;
+    font-style: italic;
+    text-shadow: 5px 5px 5px purple;
+}
+#face{
+    height: 200px;
+    width: 200px;
+    background: plum;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    margin-top: 150px;
+    margin: auto;
+
+}
+#leye,#reye{
+    height: 25px;
+    width: 25px;
+    background: black;
+    border-radius: 50%;
+}
+#eyes{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 125px;
+}
+#larm,#rarm{
+    height: 100px;
+    width: 25px;
+    background: plum;
+    margin-top: 18px;
+    border-radius: 50px;
+}
+#center{
+    height: 200px;
+    width: 200px;
+    background: plum;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+#body{
+    width: 300px;
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+    margin-top: 15px;
+}
+#llegs,#rlegs{
+    height: 100px;
+    width: 25px;
+    background: plum;
+    margin-top: 18px;
+    border-radius: 50px;
+}
+#legs{
+    display: flex;
+    justify-content: space-evenly;
+    width: 300px;
+    margin: auto;
+    margin-top: -35px;
+}
+#main{
+    height: 530px;
+    width: 350px;
+    border: 3px solid black;
+    margin: auto;
+    margin-top: 150px;
+}
+#main:hover #face{
+    width: 200px;
+    background:pink;
+    animation: changeface 1s 10
+}
+@keyframes changeface{
+    0%{
+        transform: translate(25px);
+
+    }
+    50%{
+        transform: translate(-25px);
+    }
+    100%{
+        transform: translate(25px);
+
+    }
+}
+#body:hover #center{
+    width: 200px;
+    background:palegoldenrod;
+    border-radius: 45%;
+    animation: changecenter 0.5s 10
+
+}
+@keyframes changecenter{
+    0%{
+        transform:rotate(90deg) ;
+    }
+    50%{
+        transform: rotate(-90deg);
+    }
+    100%{
+        transform: rotate(90deg);
+    }
+}
+#body:hover #larm{
+    width: 20px;
+    background:aqua;
+    animation: changelarm 0.5s 10
+
+}
+@keyframes changelarm{
+    0%{
+        transform:rotate(90deg) ;
+        transform-origin: bottom center;
+    }
+    100%{
+        transform: rotate(-90deg);
+        transform-origin: bottom center;
+    }
+}
+#body:hover #rarm{
+    width: 20px;
+    background:aqua;
+    animation: changerarm 1s 10}
+@keyframes changerarm{
+    0%{
+    transform:rotate(90deg) ;
+    transform-origin:top center;
+    }
+    100%{
+        transform: rotate(-90deg);
+        transform-origin: top center;
+    }}
+#legs:hover #llegs{
+        width: 20px;
+        background:aqua;
+        animation: changellegs 1s 10}
+    @keyframes changellegs{
+        0%{
+        transform:rotate(180deg) ;
+        transform-origin:bottom center;
+        }
+        100%{
+            transform: rotate(-180deg);
+            transform-origin: bottom center;
+            }
+        }
+        #legs:hover #rlegs{
+            width: 20px;
+            background:aqua;
+            animation: changerlegs 0.5s 10}
+        @keyframes changerlegs{
+            0%{
+            transform:rotate(180deg) ;
+            transform-origin: bottom center;}
+            100%{
+                transform: rotate(-180deg);
+                transform-origin: bottom center;
+                
+                }
+            }
